@@ -1,0 +1,103 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Mastek </title>
+<style>
+		body{
+			background-color:#DEF2F1;
+			color:#374785;
+			}
+		img{
+			width:95px;
+			height:95px;
+			}
+		header{
+			padding:2px;
+			border:3px solid black;
+		}
+		#logo{
+			float:left;
+			}
+		header h1{
+			font-size:65px;
+			font-weight:bold;
+			padding:5px;
+			margin:6px;
+			text-align:left;
+		
+		</style>
+	</head>
+
+<body>
+		<header>
+			<img src=".\images\1.jfif" id="logo" name="logo">
+			<h1> Mastek Ltd.</h1>
+		</header>
+		<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+		<section class="container">
+		<form action="home.html" class="container">
+		<div class="row">
+			<label class="col-md-4">First Name:</label>
+			<input type="text" name="firstName" id="firstName" class="col-md-4"/>
+		</div>
+		<div class="row">
+			<label class="col-md-4">Middle Name:</label>
+			<input type="text" name="middleName" id="middleName" class="col-md-4"/>
+		</div>
+		<div class="row">
+			<label class="col-md-4">Last Name:</label>
+			<input type="text" name="lastName" id="lastName" class="col-md-4"/>
+		</div>
+		<div class="row">
+			<label class="col-md-4">DOB:</label>
+			<input type="date" name="dob" id="dob" class="col-md-4"/>
+		</div>
+		<div class="row">
+			<label class="col-md-4">DOJ:</label>
+			<input type="text" name="doj" id="doj" class="col-md-4"/>
+		</div>
+		<div class="row">
+			<label class="col-md-4">Designation:</label>
+			<select id="designation" class="col-md-4">
+						<option value="Trainee">Trainee</option>
+						<option value="Employee">Employee</option>
+						<option value="Freelancer">Freelancer</option>
+						<option value="hr">HR</option>
+						</select>
+		</div>
+		<div class="row">
+			<label class="col-md-4">City:</label>
+					<input type="checkbox" name="city" value="Mumbai" class="col-md-2"/>Mumbai
+					<input type="checkbox" name="city" value="Pune" class="col-md-2"/>Pune
+					<input type="checkbox" name="city" value="Chennai" class="col-md-2"/>Chennai
+		</div>	
+		<div class="row">	
+			<label class="col-md-4">Gender:</label> 
+			<input type="radio" name="gender" value="m" class="col-md-2"/>Male
+					<input type="radio" name="gender" value="f" class="col-md-2"/>Female
+		</div>
+		<div class="row">
+			<input type="submit" value="Submit" class="col-md-4"/>
+		</div>
+		</form>
+		
+		</section>
+		<footer>
+			<marquee><h6 align="center">Mastek&copy;of 2019</h6></marquee>
+		</footer>
+	</body>
+	
+</html>

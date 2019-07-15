@@ -1,0 +1,21 @@
+<p>emp-get works!</p>
+<div class="container">
+    
+    <div class="row">
+        <div class="col-md-4">ID</div>    
+        <div class="col-md-4">NAME</div>    
+        <div class="col-md-4">DESIGNATION</div>    
+    </div>
+    
+    <div class="row" *ngFor="let employee of employees">
+        <div class="col-md-3">{{employee.empId}}    </div>    
+        <div class="col-md-3">{{employee.empName}}    </div>    
+        <div class="col-md-3">{{employee.designation}}    </div>    
+        <div class="col-md-3">
+            <a routerLink="/employee/edit/{{employee.empId}}">Edit</a>
+            <a routerLink="/employee/delete/{{employee.empId}}">Delete</a>
+            
+        </div>    
+    </div>
+</div>
+

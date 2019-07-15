@@ -1,0 +1,43 @@
+<!--home.html } small case -->
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title> Home </title>
+	<script>
+	function f1()
+	{
+	alert("Welcome!");
+	}
+
+	var count = [0,0,0,0,0];
+  
+	function f2(event){
+	 var imgId = event.target.id;
+	 var index=imgId.substr(3);
+      var display = document.getElementById("result"+index);
+	
+        count[index]=count[index]+1;
+        display.innerHTML = count[index];
+      }
+
+	</script>
+	</head>
+	<body>
+	<p onclick="f1()">Welcome to Introduction of Javascript</p>
+	
+	<img src="C:\Users\Sanyogi14433\Pictures\Saved Pictures\5.jfif" id="Img1" onclick="f2(event)"/ >
+	<p>Counter<span id="result1" > 0 </span></p>
+	<img src="C:\Users\Sanyogi14433\Pictures\Saved Pictures\4.jfif" id="Img2" onclick="f2(event)"/ >
+	<p>Counter<span id="result2" > 0 </span></p>
+	<img src="C:\Users\Sanyogi14433\Pictures\Saved Pictures\4.jfif" id="Img3" onclick="f2(event)"/ >
+	<p>Counter<span id="result3" > 0 </span></p>
+	<img src="C:\Users\Sanyogi14433\Pictures\Saved Pictures\4.jfif" id="Img4" onclick="f2(event)"/ >
+	<p>Counter<span id="result4" > 0 </span></p>
+	
+	</body>
+</html>
+
+
+
+
+
